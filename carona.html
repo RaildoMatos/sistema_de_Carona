@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cadastro de Carona para Pais/Mães</title>
+    <link rel="stylesheet" type="text/css" href="./estiloDesafio.css" />
+  </head>
+  <body>
+    <div class="card">
+      <h1>Cadastro de Carona para Pais/Mães</h1>
+
+      <form id="cadastroForm" action="processar_cadastro.js" method="post">
+        <h2>Informações do Condutor</h2>
+        <label for="nome">Nome:</label>
+        <input type="text" placeholder="Digite seu nome" />
+        <label for="cnh">CNH:</label>
+        <input type="checkbox" id="cnh" name="cnh" />
+        <label for="categoria">Categoria:</label>
+        <select name="categoria" id="categoria">
+          <option value="A">A</option>
+          <option value="B">B</option>
+        </select>
+
+        <label for="antecedentes">Atestado de Antecedentes Criminais:</label>
+        <input
+          type="file"
+          id="antecedentes"
+          name="antecedentes"
+          required
+          accept=".pdf"
+        />
+
+        <div class="endereco">
+          <h2>Informações de Residência</h2>
+          <label for="rua" class="rua">Rua:</label>
+          <input type="text" id="rua" name="rua" required />
+          <label for="numero">Número:</label>
+          <input type="text" id="numero" name="numero" required />
+          <label for="bairro">Bairro:</label>
+          <input type="text" id="bairro" name="bairro" required />
+        </div>
+
+        <h2>Informações dos Filhos</h2>
+        <label for="escola">Escola dos Filhos:</label>
+        <input type="text" id="escola" name="escola" required />
+
+        <button type="submit">Enviar Cadastro</button>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

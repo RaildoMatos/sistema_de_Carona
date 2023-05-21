@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sistema de caronas</title>
+    <link rel="stylesheet" href="./estilosolicitante.css" />
+  </head>
+  <body>
+    <div class="card">
+      <h1>Sistema de Caronas</h1>
+
+      <form id="caronaForm">
+        <label for="origem">Origem:</label>
+        <input type="text" id="origem" required />
+
+        <label for="destino">Destino:</label>
+        <input type="text" id="destino" required />
+
+        <label for="data">Data:</label>
+        <input type="date" id="data" required />
+
+        <label for="hora">Hora:</label>
+        <input type="time" id="hora" required />
+
+        <button type="submit">Buscar Carona</button>
+      </form>
+
+      <script src="./solicitante.js"></script>
+    </div>
+  </body>
+</html>
